@@ -1,0 +1,50 @@
+:root {
+  --base1: #eb586f;
+  --base2: #d8e9f0;
+  --base3: #4aa0d5;
+  --base4: #454553;
+  font-size: 16px;
+}
+
+body {
+  padding: 45px;
+  background-color: var(--base3);
+  color: var(--base4);
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+section {
+  width: 50vw;
+  margin: 50px auto 60px auto;
+
+  text-align: center;
+  border: solid;
+  background-color: var(--base4);
+  color: var(--base2);
+  padding: 20px;
+
+  transition: transform 0.5s;
+  transform: translateX(-100vw);
+
+}
+
+p {
+  margin-bottom: 100px;
+}
+
+section > * {
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: cursive;
+  font-size: 1.3rem;
+  background-color: var(--base1);
+  border-radius: 25px;
+}
+.active {
+  transform: translateX(0);
+}
